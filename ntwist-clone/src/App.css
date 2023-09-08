@@ -1,0 +1,205 @@
+/* Base styles for the entire webpage */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  overflow-x: hidden;  /* Prevent horizontal scrolling */
+}
+
+/* Styling for the main application container */
+.app-container {
+  background-image: url('/public/home-final.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 20%;  
+}
+
+/* Header styles */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+}
+
+/* Navigation link styles */
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+/* Main content styles */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: auto;
+  width: 100%;
+}
+
+/* Intro content styles */
+.intro-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+/* Content margin and dimension adjustment */
+.content-for-more {
+  padding-left: 5%;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+}
+
+/* Main content section styling */
+.content-section {
+  display: flex;
+  height: 400px;
+  width: 100%;
+}
+
+/* Shared styles for text and image parts */
+.text-part, .image-part {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 5%;
+}
+
+/* Gap between content parts */
+.gap-part {
+  width: 10%;
+}
+
+/* Order of elements for the 'odd' class */
+.odd .text-part { order: 1; }
+.odd .image-part { order: 2; }
+
+/* Order of elements for the 'even' class */
+.even .text-part { order: 2; }
+.even .image-part { order: 1; }
+
+/* Text-part specific styles */
+.text-part p { color: black; }
+.text-part { align-items: flex-start; }
+.text-part p.additional-data {
+  text-align: left;
+  white-space: pre-line;
+  margin-left: 0;
+  padding-left: 0;
+  margin-bottom: 1em;
+}
+
+/* Content section coloring */
+.content-section h1, .content-section { color: #ff3a2d; }
+
+/* Specific styling for additional headings */
+.additional-heading { font-size: 43px; }
+
+/* Image styling */
+.image-part img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Read more button styles */
+.read-more-btn, .read-more-btn1 {
+  z-index: 5;
+  text-align: center;
+  padding: 10px 23px;
+  font-family: Roboto;
+  height: 50px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 3px;
+  margin: 0;  
+  align-self: flex-start;
+}
+
+/* Content top styles */
+.content-top {
+  padding-left: 0%;
+  font-size: 30px;
+}
+
+/* Button colors */
+.read-more-btn { background-color: rgb(0, 122, 255); }
+.read-more-btn1 { background-color: #ff3a2d; }
+
+/* Logo container styles */
+.logo-container {
+  display: flex;
+  align-items: center; 
+  gap: 10px; 
+}
+
+.logo { height: 40px; }
+
+/* Footer styles */
+.footer-container {
+  padding: 20px 50px;
+  background-color: #000;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-container { margin-bottom: 20px; }
+
+.logo1 {
+  width: 100px;
+  height: auto;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Footer links and social icons styles */
+.footer-links {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 10px;
+}
+
+.footer-links a, .social-icons a { color: white; text-decoration: none; }
+
+/* Address style in footer */
+.footer-address {
+  margin-bottom: 20px;
+  color: grey;
+}
+
+/* Social icons styling */
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.social-icons i { font-size: 15px; }
+
+/* Copyright notice styling */
+.copyright {
+  padding-bottom: 30px;
+  color: grey;
+}
